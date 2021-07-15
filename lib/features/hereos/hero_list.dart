@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import './hero_card.dart';
 
 class HeroList extends StatelessWidget {
@@ -8,6 +9,8 @@ class HeroList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var t = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -18,49 +21,45 @@ class HeroList extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
-              child: Text('6 Hereos'),
+              child: Text(t.heroCount(6)),
             ),
             Expanded(
               child: ListView(
                 children: <Widget>[
                   HeroCard(
-                    name: 'Grace Hopper',
+                    name: t.hopperName,
                     born: '9 December 1906',
-                    bio: 'Devised theory of machine-independent programming '
-                        'languages.',
+                    bio: t.hopperBio,
                     imagePath: 'assets/images/grace_hopper.jpg',
                   ),
                   HeroCard(
-                    name: 'Alan Turing',
+                    name: t.turingName,
                     born: '23 June 1912',
-                    bio: 'Father of theoretical computer science & '
-                        'artificial intelligence.',
+                    bio: t.turingBio,
                     imagePath: 'assets/images/alan_turing.jpg',
                   ),
                   HeroCard(
-                    name: 'Barbara Liskov',
+                    name: t.liskovName,
                     born: '7 November 1939',
-                    bio: 'Turing Award winner; inventor of Liskov '
-                        'substitution principle.',
+                    bio: t.liskovBio,
                     imagePath: 'assets/images/barbara_liskov.jpg',
                   ),
                   HeroCard(
-                    name: 'Steve Wozniak',
+                    name: t.wozniakName,
                     born: '11 August 1950',
-                    bio: 'Designed & developed the Apple I & Apple II '
-                        'microcomputers.',
+                    bio: t.wozniakBio('Apple I', 'Apple II'),
                     imagePath: 'assets/images/steve_wozniak.jpg',
                   ),
                   HeroCard(
-                    name: 'Tim Berners-Lee',
+                    name: t.bernersLeeName,
                     born: '8 June 1955',
-                    bio: 'Inventor of the World Wide Web.',
+                    bio: t.bernersLeeBio,
                     imagePath: 'assets/images/tim_berners_lee.jpg',
                   ),
                   HeroCard(
-                    name: 'Bill Gates',
+                    name: t.gatesName,
                     born: '28 October 1955',
-                    bio: 'Co-founder of Microsoft Corporation; philanthropist.',
+                    bio: t.gatesBio('Microsoft Corporation'),
                     imagePath: 'assets/images/bill_gates.jpg',
                   ),
                 ],
