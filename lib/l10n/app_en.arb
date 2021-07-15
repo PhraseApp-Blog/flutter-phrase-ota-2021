@@ -1,14 +1,31 @@
 {
   "appTitle": "Heroes of Computer Science",
-  "openSettings": "Open Settings",
-  "heroCount": "{count,plural, =0{No heroes yet} =1{1 hero} other{{count} heroes}}",
-  "@heroCount": {
+  "@appTitle": {
+    "type": "text"
+  },
+  "bernersLeeBio": "Inventor of the World Wide Web.",
+  "@bernersLeeBio": {
+    "type": "text"
+  },
+  "bernersLeeName": "Tim Berners-Lee",
+  "@bernersLeeName": {
+    "type": "text"
+  },
+  "gatesBio": "Co-founder of {microsoft}; philanthropist.",
+  "@gatesBio": {
+    "type": "text",
     "placeholders": {
-      "count": {}
+      "microsoft": {
+      }
     }
+  },
+  "gatesName": "Bill Gates",
+  "@gatesName": {
+    "type": "text"
   },
   "heroBorn": "Born {date}",
   "@heroBorn": {
+    "type": "text",
     "placeholders": {
       "date": {
         "type": "DateTime",
@@ -16,29 +33,62 @@
       }
     }
   },
-  "hopperName": "Grace Hopper",
-  "hopperBio": "Devised theory of machine-independent programming languages.",
-  "turingName": "Alan Turing",
-  "turingBio": "Father of theoretical computer science & artificial intelligence.",
-  "liskovName": "Barbara Liskov",
-  "liskovBio": "Turing Award winner; inventor of Liskov substitution principle.",
-  "wozniakName": "Steve Wozniak",
-  "wozniakBio": "Developed the {appleOne} & {appleTwo} microcomputers.",
-  "@wozniakBio": {
+  "heroCount": "{count,plural, =0{No heroes yet} =1{1 hero} other{{count} heroes}}",
+  "@heroCount": {
+    "type": "text",
     "placeholders": {
-      "appleOne": {},
-      "appleTwo": {}
+      "count": {
+      }
     }
   },
-  "bernersLeeName": "Tim Berners-Lee",
-  "bernersLeeBio": "Inventor of the World Wide Web.",
-  "gatesName": "Bill Gates",
-  "gatesBio": "Co-founder of {microsoft}; philanthropist.",
-  "@gatesBio": {
-    "placeholders": {
-      "microsoft": {}
-    }
+  "hopperBio": "Devised theory of machine-independent programming languages.",
+  "@hopperBio": {
+    "type": "text"
+  },
+  "hopperName": "Grace Hopper",
+  "@hopperName": {
+    "type": "text"
+  },
+  "liskovBio": "Turing Award winner; inventor of Liskov substitution principle.",
+  "@liskovBio": {
+    "type": "text"
+  },
+  "liskovName": "Barbara Liskov",
+  "@liskovName": {
+    "type": "text"
+  },
+  "openSettings": "Open Settings",
+  "@openSettings": {
+    "type": "text"
   },
   "settings": "Settings",
-  "settingsScreen": "Settings Screen"
+  "@settings": {
+    "type": "text"
+  },
+  "settingsScreen": "Settings Screen",
+  "@settingsScreen": {
+    "type": "text"
+  },
+  "turingBio": "Father of theoretical computer science & artificial intelligence.",
+  "@turingBio": {
+    "type": "text"
+  },
+  "turingName": "Alan Turing",
+  "@turingName": {
+    "type": "text"
+  },
+  "wozniakBio": "Developed the {appleOne} & {appleTwo} microcomputers.",
+  "@wozniakBio": {
+    "type": "text",
+    "placeholders": {
+      "appleOne": {
+      },
+      "appleTwo": {
+      }
+    }
+  },
+  "wozniakName": "Steve Wozniak",
+  "@wozniakName": {
+    "type": "text"
+  }
 }

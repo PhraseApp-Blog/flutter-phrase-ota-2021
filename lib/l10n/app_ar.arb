@@ -1,20 +1,94 @@
 {
   "appTitle": "أبطال علوم الكمبيوتر",
-  "openSettings": "إفتح الإعدادات",
-  "heroCount": "{count,plural, =0{لا توجد أبطال بعد} =1{بطل {count}} =2{بطلان} few{{count} أبطال} many{{count} بطل} other{{count} بطل}",
-  "heroBorn": "تاريخ الميلاد {date}",
-  "hopperName": "جريس هوبر",
-  "hopperBio": "إبتكرت نظرية للغات البرمجة المستقلة عن الجهاز.",
-  "turingName": "آلان تورينج",
-  "turingBio": "الأب الروحي لعلوم الكمبيوتر النظرية والذكاء الاصطناعي.",
-  "liskovName": "باربرا ليسكوف",
-  "liskovBio": "الفائزة بجائزة تورينج، مخترعة مبدأ استبدال ليسكوف.",
-  "wozniakName": "ستيف وزنياك",
-  "wozniakBio": "طور جهازي كمبيوتر {appleOne} و {appleTwo}",
-  "bernersLeeName": "تيم برنرز - لي",
+  "@appTitle": {
+    "type": "text"
+  },
   "bernersLeeBio": "مخترع شبكة الويب العالمية.",
-  "gatesName": "بيل جيتس",
+  "@bernersLeeBio": {
+    "type": "text"
+  },
+  "bernersLeeName": "تيم برنرز - لي",
+  "@bernersLeeName": {
+    "type": "text"
+  },
   "gatesBio": "المؤسس المشارك لشركة {microsoft} ، محب الخير.",
+  "@gatesBio": {
+    "type": "text",
+    "placeholders": {
+      "microsoft": {
+      }
+    }
+  },
+  "gatesName": "بيل جيتس",
+  "@gatesName": {
+    "type": "text"
+  },
+  "heroBorn": "تاريخ الميلاد {date}",
+  "@heroBorn": {
+    "type": "text",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "heroCount": "{count,plural, =0{لا توجد أبطال بعد} =1{بطل {count}} =2{بطلان} few{{count} أبطال} many{{count} بطل} other{{count} بطل}",
+  "@heroCount": {
+    "type": "text",
+    "placeholders": {
+      "count": {
+      }
+    }
+  },
+  "hopperBio": "إبتكرت نظرية للغات البرمجة المستقلة عن الجهاز.",
+  "@hopperBio": {
+    "type": "text"
+  },
+  "hopperName": "جريس هوبر",
+  "@hopperName": {
+    "type": "text"
+  },
+  "liskovBio": "الفائزة بجائزة تورينج، مخترعة مبدأ استبدال ليسكوف.",
+  "@liskovBio": {
+    "type": "text"
+  },
+  "liskovName": "باربرا ليسكوف",
+  "@liskovName": {
+    "type": "text"
+  },
+  "openSettings": "إفتح الإعدادات",
+  "@openSettings": {
+    "type": "text"
+  },
   "settings": "الإعدادات",
-  "settingsScreen": "شاشة الإعدادات"
+  "@settings": {
+    "type": "text"
+  },
+  "settingsScreen": "شاشة الإعدادات",
+  "@settingsScreen": {
+    "type": "text"
+  },
+  "turingBio": "الأب الروحي لعلوم الكمبيوتر النظرية والذكاء الاصطناعي.",
+  "@turingBio": {
+    "type": "text"
+  },
+  "turingName": "آلان تورينج",
+  "@turingName": {
+    "type": "text"
+  },
+  "wozniakBio": "طور جهازي كمبيوتر {appleOne} و {appleTwo}",
+  "@wozniakBio": {
+    "type": "text",
+    "placeholders": {
+      "appleOne": {
+      },
+      "appleTwo": {
+      }
+    }
+  },
+  "wozniakName": "ستيف وزنياك",
+  "@wozniakName": {
+    "type": "text"
+  }
 }
