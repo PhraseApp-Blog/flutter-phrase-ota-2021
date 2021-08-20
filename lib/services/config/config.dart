@@ -29,4 +29,9 @@ class Config {
       return get('PHRASE_OTA_PRODUCTION_SECRET');
     }
   }
+
+  static String? get phraseOtaDevelopmentSecret => get('PHRASE_OTA_DEV_SECRET');
+
+  static String? get phraseOtaProductionSecret =>
+      get('PHRASE_OTA_PRODUCTION_SECRET');
 }

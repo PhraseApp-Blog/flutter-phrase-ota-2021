@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:phrase/phrase.dart';
 import './hero_card.dart';
 
 class HeroList extends StatelessWidget {
@@ -14,6 +15,15 @@ class HeroList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.refresh_sharp),
+            onPressed: () {
+              Phrase.updateTranslations(context)
+                  .then((_) => print("Translations updated}"));
+            },
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

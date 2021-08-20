@@ -10,7 +10,9 @@ Future<void> main() async {
 
   Phrase.setup(
     Config.phraseOtaDistributionId!,
-    Config.phraseOtaSecret!,
+    Config.phraseOtaProductionSecret!,
+    customAppVersion: '0.99.100',
+    checkForUpdates: false,
   );
 
   runApp(MyApp());
